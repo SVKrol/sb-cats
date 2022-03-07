@@ -62,3 +62,23 @@ for (let i = 0; i < cards.length; i++) {
         showInfo(cats[i]);
     })
 }
+
+function Input(){
+    login_ok = false;
+    user_name = "";
+    password = "";
+    user_name = prompt("Логин","");
+    user_name = user_name.toLowerCase();
+    password = prompt("Пароль","");
+    password = password.toLowerCase();
+    if (user_name=="login" && password=="pass") {
+     login_ok = true;
+     window.location = "index1.html";
+    }
+    if (user_name=="login2" && password=="pass2") {
+     login_ok = true;
+     window.location = "forum/index1.html";
+    }
+    
+    if (login_ok==false) alert("Неверный логин или пароль!");
+    }
